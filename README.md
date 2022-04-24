@@ -12,10 +12,10 @@ $ProcessExacutableLocation = "C:\Program Files\Hue Sync\HueSync.exe" # Path to t
 $ProcessCheckInterval = "30" # Number in minutes to wait between process checks. Needs to be at least 1
 ```
 <b>$ProcessName</b> is the name of the process as it appears in the task manager.</br>
-<i>    Note: This generally does NOT include the extension on the end of the name</i></br>
+<i>&nbsp;&nbsp;&nbsp;Note: This generally does NOT include the extension on the end of the name</i></br>
 </br>
 <b>$ProcessExacutableLocation</b> is the path of the executable.</br>
 </br>
 <b>$ProcessCheckInterval</b> is the amount of time <b>in minutes</b> that the script is to wait between checks.</br>
-<i>    Note: This needs to be set to a value no less than 1.</br>
+<i>&nbsp;&nbsp;&nbsp;Note: This needs to be set to a value no less than 1.</br>
 </hr>
