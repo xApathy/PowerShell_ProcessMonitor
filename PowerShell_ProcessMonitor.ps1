@@ -1,5 +1,5 @@
-$ProcessName = "HueSync" # Process name as it appears in Task manager
-$ProcessExacutableLocation = "C:\Program Files\Hue Sync\HueSync.exe" # Path to the executable
+$ProcessName = "HueSync" # Process name as it appears in Task manager (Under Details, omit .exe)
+$ProcessExecutableLocation = "C:\Program Files\Hue Sync\HueSync.exe" # Path to the executable
 $ProcessCheckInterval = "30" # Number in minutes to wait between process checks. Needs to be at least 1
 # --------------------------------------------------------------------------------------
 # -------------------- DO NOT MODIFY BELOW THIS LINE -----------------------------------
@@ -15,7 +15,7 @@ Function  CheckProcess {
         {
             $CurrentTime = Get-Date -Format "HH:mm"
             Write-Host "[$CurrentTime]" -ForegroundColor white -NoNewline; Write-Host " - Not Running - Executing start process!!" -ForegroundColor Red;
-            Start-Process -FilePath $ProcessExacutableLocation
+            Start-Process -FilePath $ProcessExecutableLocation
             $Global:Checking = $false
             LoopTime
         }
